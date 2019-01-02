@@ -1,0 +1,29 @@
+{
+  "name": "bindeveloperz/alert",
+  "description": "Laravel package to flash error msg inspired by laracast/flash.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": ["laravel" , "alert" , "session"],
+  "authors": [
+    {
+      "name": "Khizar naeem",
+      "email": "khizarnaeeem0332@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Bindeveloperz\\Alert\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bindeveloperz\\Alert\\AlertServiceProvider"
+      ],
+      "aliases": {
+        "Alert": "Bindeveloperz\\Alert\\Facades\\Alert"
+      }
+    }
+  }
+}

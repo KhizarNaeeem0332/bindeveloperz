@@ -1,0 +1,29 @@
+{
+  "name": "bindeveloperz/toast",
+  "description": "Laravel package of javascript toastr library using sessions",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": ["laravel" , "alert" , "session" , "toastr.js"],
+  "authors": [
+    {
+      "name": "Khizar naeem",
+      "email": "khizarnaeeem0332@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Bindeveloperz\\Toast\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bindeveloperz\\Toast\\ToastServiceProvider"
+      ],
+      "aliases": {
+        "Alert": "Bindeveloperz\\Toast\\Facades\\Toast"
+      }
+    }
+  }
+}
